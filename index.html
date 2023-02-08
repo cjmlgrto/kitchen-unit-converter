@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+    <body>
+        <div>
+            <input type="number" placeholder="0" id="from_value" onchange="convert();"/>
+            <select id="from_type" onchange="convert();">
+                <optgroup label="Weight">
+                    <option>kg</option>
+                    <option>pound</option>
+                </optgroup>
+                <optgroup label="Volume">
+                    <option>cups</option>
+                    <option>ml</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <input type="number" placeholder="0" id="to_value" onchange="convert();"/>
+            <select id="to_type" onchange="convert();">
+                <optgroup label="Weight">
+                    <option>kg</option>
+                    <option>pound</option>
+                </optgroup>
+                <optgroup label="Volume">
+                    <option>cups</option>
+                    <option>ml</option>
+                </optgroup>
+            </select>
+        </div>
+    </body>
+</html>
